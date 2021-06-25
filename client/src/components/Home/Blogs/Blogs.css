@@ -1,0 +1,23 @@
+.blog {
+    min-height: 450px;
+    transition: 1s all;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+.blog img {
+    max-height: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.blog:hover {
+    /* background: #feac5e;
+    background: -webkit-linear-gradient(to right, #4bc0c8, #c779d0, #feac5e);
+    background: linear-gradient(to right, #4bc0c8, #c779d0, #feac5e); */
+
+    transform: scale(1.05);
+}
+.blog:hover .highlighted-text {
+    background-position-y: 100%;
+    background-image: linear-gradient(ghostwhite 50%, yellow 50%);
+    background-size: auto 200%;
+}

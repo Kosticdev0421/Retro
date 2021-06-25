@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap");
+
+.App {
+    scroll-behavior: smooth;
+}
+.text-brand {
+    color: #404083;
+}
+.btn-brand {
+    background-color: #e53e26;
+    color: white;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    /* border: 5px solid black; */
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px 0 10px 0;
+}
+.highlighted-text {
+    display: inline;
+    color: #404083;
+    /* padding: 5px 5px 0px; */
+    background-position-y: -0%;
+    background-image: linear-gradient(ghostwhite 40%, yellow 60%);
+    transition: all 0.5s ease;
+    background-size: auto 175%;
+}
+.highlighted-text:hover {
+    background-position-y: 100%;
+    background-image: linear-gradient(ghostwhite 50%, yellow 50%);
+    background-size: auto 200%;
+}
+
+.row {
+    max-width: 100%;
+}
+input,
+textarea {
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.title-text {
+    color: rgb(0, 0, 0);
+    font-size: 72px;
+    font-family: "Sansita", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 3px 3px 0px #393d48, 6px 6px 0px #5c5f72;
+}

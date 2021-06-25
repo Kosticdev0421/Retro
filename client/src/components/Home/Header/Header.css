@@ -1,0 +1,17 @@
+.header{
+    min-height: 82vh;
+    text-align: center;
+}
+.header > div{
+    height: 80vh;
+}
+.header hr{
+    color: black;
+    height: 5px;
+}
+
+@media (max-width: 768px) {
+    .header .row{
+        flex-direction: column-reverse;
+    }
+}

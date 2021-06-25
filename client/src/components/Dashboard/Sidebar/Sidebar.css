@@ -1,0 +1,17 @@
+.sidebar{
+    background-color: ghostwhite;
+    min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        min-height: 200px;
+        height: 200px;
+    }
+    .sidebar-items{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
