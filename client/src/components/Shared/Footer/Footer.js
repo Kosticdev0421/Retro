@@ -1,21 +1,20 @@
-import { faFacebookF, faGooglePlusG, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import FooterCol from '../FooterCol/FooterCol';
-import './Footer.css';
+import { faFacebookF, faGooglePlusG, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import FooterCol from "../FooterCol/FooterCol";
+import "./Footer.css";
 
 const Footer = () => {
     const ourAddress = [
-        {name: "New York - 101010 Hudson" , link: "//google.com/map"},
-        {name: "Yards" , link: "//google.com/map"},
-       
-    ]
+        { name: "New York - 101010 Hudson", link: "//google.com/map" },
+        { name: "Yards", link: "//google.com/map" },
+    ];
 
     const quickLinks = [
-        {name: "Login" , link: "/login"},
-        {name: "Dashboard" , link: "/dashboard"},
-        {name: "Our blog" , link: "/blog"}
-    ]
+        { name: "Login", link: "/login" },
+        { name: "Dashboard", link: "/dashboard" },
+        { name: "Our blog", link: "/blog" },
+    ];
     return (
         <footer className="footer-area clear-both">
             <div className="container pt-5">
@@ -44,7 +43,9 @@ const Footer = () => {
                         </ul>
                         <div className="mt-5">
                             <h6>Call now</h6>
-                            <button className="btn btn-brand">+12345678</button>
+                            <a href="tel:123-456-7890">
+                                <button className="btn btn-brand">123-456-7890</button>
+                            </a>
                         </div>
                     </FooterCol>
                 </div>

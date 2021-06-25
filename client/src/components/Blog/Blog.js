@@ -14,8 +14,11 @@ const Blog = () => {
             });
     }, []);
 
+    if(!blog?.title){
+        return <h1>Loading an incredible blog</h1>
+    }
     return (
-        <div className="blog-container">
+        <div>
             <Nav />
             <div className="blog">
                 <h1>{blog.title}</h1>

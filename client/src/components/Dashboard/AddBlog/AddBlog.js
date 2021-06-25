@@ -15,7 +15,7 @@ const AddBlog = () => {
 
     return (
         <div>
-            <h2>Add Blog</h2>
+            <h2 className="title-text">Add Blog</h2>
             <form onSubmit={handleAddBlog}>
                 <div>
                     <small>Blog Title</small>

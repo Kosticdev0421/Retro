@@ -4,7 +4,6 @@ import Nav from '../../Shared/Nav/Nav';
 import Blogs from '../Blogs/Blogs';
 import Header from '../Header/Header';
 import Testimonials from '../Testimonials/Testimonials';
-import './Home.css';
 
 const Home = () => {
     return (

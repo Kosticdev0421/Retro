@@ -1,6 +1,6 @@
 .sidebar{
-    background-color: ghostwhite;
     min-height: 100vh;
+    background-color: #f8f8ff80;
 }
 
 @media (max-width: 768px) {

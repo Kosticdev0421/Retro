@@ -25,8 +25,11 @@ const ManageBlogs = () => {
     }
     return (
         <div className="row">
-            <h2>Created Blogs</h2>
-            <div className="row shadow-sm py-2 bg-light justify-content-around">
+            <h2 className="title-text my-4">Created Blogs</h2>
+            <div
+                className="row shadow-sm py-2 justify-content-around ms-3 text-danger"
+                style={{ background: "#f8f8ffad", fontWeight: "bold" }}
+            >
                 <div className="col-md-6">Title</div>
                 <div className="col-md-4">AddedBy</div>
                 <div className="col-md-2">Manage</div>
@@ -34,14 +37,18 @@ const ManageBlogs = () => {
             {blogs &&
                 blogs.map((blog) => {
                     return (
-                        <div className="row shadow-sm my-3 py-2 justify-content-around">
+                        <div
+                            className="row shadow-sm mt-3 ms-3 py-2 justify-content-around"
+                            style={{ background: "#f8f8ff80" }}
+                        >
                             <div className="col-md-6">
-                                <Link to={`/blogs/${blog._id}`} className="text-dark">{blog.title}</Link>
+                                <Link to={`/blogs/${blog._id}`} className="text-dark">
+                                    {blog.title}
+                                </Link>
                             </div>
                             <div className="col-md-4">{blog.email}</div>
                             <div className="col-md-2 ps-4">
-                                <span style={{ cursor: "pointer", }}>
-                                    
+                                <span style={{ cursor: "pointer" }}>
                                     <span onClick={() => deleteBlog(blog._id, blog.name)}>
                                         <FontAwesomeIcon icon={faTrash} size="lg" color="crimson" />
                                     </span>
