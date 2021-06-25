@@ -7,7 +7,7 @@ import Sidebar from "../Sidebar/Sidebar";
 
 const Dashboard = () => {
     return (
-        <div>
+        <div className="dashboard">
             <div className="row">
                 <Sidebar />
                 <div className="col-md-10">

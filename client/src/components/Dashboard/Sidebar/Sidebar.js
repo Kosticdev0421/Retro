@@ -17,7 +17,7 @@ const Sidebar = () => {
                 </li>
                 
                 {currentUser.isAdmin ? (
-                    <li>
+                    <>
                         <li>
                             <Link to="/dashboard/add-blog" className="nav-link">
                                 <FontAwesomeIcon icon={faPlus} /> Add Blog
@@ -28,17 +28,15 @@ const Sidebar = () => {
                                 <FontAwesomeIcon icon={faUserEdit} /> Manage Blogs
                             </Link>
                         </li>
-                    </li>
+                    </>
                 ) : (
                     <li>
-                        <li>
-                            <Link to="/dashboard/review" className="nav-link">
-                                <FontAwesomeIcon icon={faStar} /> Review
-                            </Link>
-                        </li>
+                        <Link to="/dashboard/review" className="nav-link">
+                            <FontAwesomeIcon icon={faStar} /> Review
+                        </Link>
                     </li>
                 )}
-                <li className="nav-link mt-5 text-brand">
+                <li className="nav-link mt-5 text-brand user-name">
                     <FontAwesomeIcon icon={faUser} />
                     {currentUser.displayName}
                 </li>

@@ -1,0 +1,9 @@
+.add-blog-form{
+    font-family: "Sansita", sans-serif;
+}
+.add-blog-form input, .add-blog-form textarea{
+    background-color: #f8f8ff80;
+}
+.dashboard .row{
+    margin: 0;
+}

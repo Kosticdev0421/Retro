@@ -5,13 +5,16 @@
 
 @media (max-width: 768px) {
     .sidebar{
-        min-height: 200px;
-        height: 200px;
+        min-height: 100px;
+        height: 100px;
     }
     .sidebar-items{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
+    }
+    .user-name{
+        margin-top: 0!important;
     }
 }

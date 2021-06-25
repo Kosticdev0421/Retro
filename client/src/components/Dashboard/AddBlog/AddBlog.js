@@ -4,6 +4,7 @@ import axios from 'axios';
 import React, { useContext, useRef, useState } from 'react';
 import { useHistory } from 'react-router';
 import { userContext } from '../../../App';
+import './AddBlog.css';
 
 const AddBlog = () => {
     const [coverPhotoLink, setCoverPhotoLink] = useState("");
@@ -16,7 +17,7 @@ const AddBlog = () => {
     return (
         <div>
             <h2 className="title-text">Add Blog</h2>
-            <form onSubmit={handleAddBlog}>
+            <form onSubmit={handleAddBlog} className="add-blog-form">
                 <div>
                     <small>Blog Title</small>
                     <input type="text" placeholder="Enter Title" required ref={blogTitleRef} />

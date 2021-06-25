@@ -27,7 +27,7 @@ const ManageBlogs = () => {
         <div className="row">
             <h2 className="title-text my-4">Created Blogs</h2>
             <div
-                className="row shadow-sm py-2 justify-content-around ms-3 text-danger"
+                className="row shadow-sm py-2 justify-content-around text-danger"
                 style={{ background: "#f8f8ffad", fontWeight: "bold" }}
             >
                 <div className="col-md-6">Title</div>
@@ -38,7 +38,7 @@ const ManageBlogs = () => {
                 blogs.map((blog) => {
                     return (
                         <div
-                            className="row shadow-sm mt-3 ms-3 py-2 justify-content-around"
+                            className="row shadow-sm mt-3 py-2 justify-content-around"
                             style={{ background: "#f8f8ff80" }}
                         >
                             <div className="col-md-6">
