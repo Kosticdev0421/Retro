@@ -1,7 +1,6 @@
 .navbar{
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 30px;
-    font-weight: 700;
 }
 .nav-item:hover{
     border-bottom: 2px solid black;

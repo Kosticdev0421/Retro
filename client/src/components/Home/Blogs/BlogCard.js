@@ -4,7 +4,7 @@ import "./Blogs";
 const BlogCard = ({ blog }) => {
     return (
         <div className="col-md-3" style={{ paddingRight: 0 }}>
-            <div className="shadow-lg p-3 m-2 blog">
+            <div className="shadow-lg p-3 m-2 blog-card">
                 <img src={blog.coverPhotoLink} alt="" className="img-fluid" />
                 <h4 className="highlighted-text">{blog.title}</h4>
 
