@@ -1,5 +1,5 @@
 .blog-card {
-    min-height: 450px;
+    height: 500px;
     transition: 1s all;
     background-color: rgba(255, 255, 255, 0.15);
 }

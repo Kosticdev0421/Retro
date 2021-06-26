@@ -2,6 +2,7 @@ import { faClock, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import moment from "moment";
 import { useEffect, useState } from "react";
+import Markdown from "react-markdown";
 import { useParams } from "react-router";
 import Nav from "../Shared/Nav/Nav";
 import './Blog.css';
@@ -36,7 +37,11 @@ const Blog = () => {
                     </span>
                 </small>
                 <img src={blog.coverPhotoLink} alt="" />
-                <p>{blog.description}</p>
+                <p>
+                    <Markdown>
+                        {blog.description}
+                    </Markdown>
+                </p>
             </div>
         </div>
     );

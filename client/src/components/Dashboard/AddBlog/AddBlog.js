@@ -22,13 +22,19 @@ const AddBlog = () => {
                     <small>Blog Title</small>
                     <input type="text" placeholder="Enter Title" required ref={blogTitleRef} />
                 </div>
-                
+
                 <div>
                     <small>Description</small>
                     <textarea
                         cols="30"
                         rows="10"
-                        placeholder="Enter Description"
+                        placeholder={`Use markdown syntax to format your text. e. g. 
+                        # heading 1
+                        ## heading 2
+                        **Bold**
+                        *Italic*
+                        [Link](http://a.com)
+                        `}
                         required
                         ref={blogDescriptionRef}
                     ></textarea>
@@ -36,11 +42,9 @@ const AddBlog = () => {
                 <div>
                     <small>Add Blog Cover Photo</small>
                     <input type="file" required onChange={getPhotoLink} />
-                    {
-                        imageLoaded && <p>{imageLoaded}</p>
-                    }
+                    {imageLoaded && <p>{imageLoaded}</p>}
                 </div>
-                <button className="btn btn-brand" disabled={!coverPhotoLink} >
+                <button className="btn btn-brand" disabled={!coverPhotoLink}>
                     <FontAwesomeIcon icon={faPlus} size="lg" />
                 </button>
             </form>
