@@ -19,6 +19,16 @@
     -webkit-text-stroke-width: 2px;
 }
 
+.blog small{
+    font-family: Barlow Condensed;
+    font-weight: 700;
+    text-transform: uppercase
+}
+.blog svg{
+    color: brown;
+    margin: 0 3px 0 1rem;
+}
+
 .blog img{
     max-width: 90%;
     display: block;
@@ -28,7 +38,7 @@
 .blog p{
     text-align: justify;
     font-family: "Sansita", sans-serif;
-    /* white-space: pre-wrap; */
+    white-space: pre-wrap;
 }
 
 .blog p::first-letter{

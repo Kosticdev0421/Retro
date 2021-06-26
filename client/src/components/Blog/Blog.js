@@ -1,3 +1,6 @@
+import { faClock, faUserAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import moment from "moment";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Nav from "../Shared/Nav/Nav";
@@ -6,6 +9,7 @@ import './Blog.css';
 const Blog = () => {
     const { blogId } = useParams();
     const [blog, setBlog] = useState([]);
+
     useEffect(() => {
         fetch(`http://localhost:5000/blog/${blogId}`)
             .then((res) => res.json())
@@ -22,7 +26,16 @@ const Blog = () => {
             <Nav />
             <div className="blog">
                 <h1>{blog.title}</h1>
-                <img src={blog.coverPhotoLink} alt=""/>
+                <small>
+                    <span>
+                        <FontAwesomeIcon icon={faUserAlt} /> {blog.addedBy}
+                    </span>
+                    <span>
+                        <FontAwesomeIcon icon={faClock} />{" "}
+                        {moment(blog.addedAt).format("DD/MM/YYYY")}
+                    </span>
+                </small>
+                <img src={blog.coverPhotoLink} alt="" />
                 <p>{blog.description}</p>
             </div>
         </div>

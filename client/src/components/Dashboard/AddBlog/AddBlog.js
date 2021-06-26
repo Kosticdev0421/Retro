@@ -51,10 +51,12 @@ const AddBlog = () => {
         e.preventDefault();
         if (coverPhotoLink) {
             const newBlog = {
+                addedBy: currentUser.displayName,
                 email: currentUser.email,
                 title: blogTitleRef.current.value,
                 description: blogDescriptionRef.current.value,
                 coverPhotoLink,
+                addedAt: new Date().getTime(),
             };
             console.log(newBlog);
             fetch(`http://localhost:5000/addBlog`, {
