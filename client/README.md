@@ -8,4 +8,4 @@
 - MONGODB
 - FIREBASE
 
-[Live view](https://retro-tech.netlify.app/)
+[Live view](https://retro-blog-app.netlify.app/)
